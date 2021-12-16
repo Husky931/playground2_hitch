@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.monaco-highlight {
+    @apply bg-yellow-500 opacity-25;
+}
+
+.menuList > *:not(:last-child) {
+    @apply mb-4;
+}
+
+.text-glow {
+    text-shadow: 0 0 10px #fff;
+}
+
+.shadow-glow {
+    box-shadow: 0px 0px 10px 0px #fff;
+}
+
+.tp-lblv_l {
+    @apply whitespace-nowrap;
+}
+
+.tp-fldv_b {
+    width: calc(100% - 42px) !important
+}

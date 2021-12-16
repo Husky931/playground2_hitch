@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"module": "esnext",
+		"moduleResolution": "node",
+		"strict": true,
+		"noImplicitOverride": true,
+		"skipLibCheck": true,
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"target": "es2019",
+		"jsx": "react",
+		"outDir": "temp"
+	},
+	"include": [
+		"src"
+	]
+}

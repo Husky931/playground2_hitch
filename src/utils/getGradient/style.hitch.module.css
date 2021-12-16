@@ -1,0 +1,26 @@
+/* .bg0 {
+    background: linear-gradient(to bottom right, #ff6400 66.6667%, #ffb800 33.3333%);
+} */
+.bg0 {
+    background: linear-gradient(to bottom right,#ff6400,  #ffb800);
+}
+
+.bg1 {
+    background: linear-gradient(to bottom right, #4f71ff, #9fb0bd);
+}
+
+.bg2 {
+    background: linear-gradient(to bottom right, #c4ff2f, #c4ff2f);
+}
+
+.bg3 {
+    background: linear-gradient(to bottom right, #00c566, #008b72);
+}
+
+.bg4 {
+    background: linear-gradient(to bottom right, #d1ecff, #8dd0ff);
+}
+
+.bg5 {
+    background: linear-gradient(to bottom right, #ffe5e5, #ffa5a5);
+}

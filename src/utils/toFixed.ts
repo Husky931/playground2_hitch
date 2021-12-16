@@ -1,0 +1,1 @@
+export default (v: number) => Number(v.toFixed(2))

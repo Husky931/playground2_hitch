@@ -1,0 +1,1 @@
+export default (e: { stopPropagation: () => void }) => e.stopPropagation()

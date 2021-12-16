@@ -1,0 +1,1 @@
+export default (fileSize: number) => fileSize / (1024 * 1024)
