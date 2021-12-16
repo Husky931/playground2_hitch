@@ -37,12 +37,22 @@ const ManagerCard: React.FC<{
                  ref={setAspectRatioEl}
                  style={{ transform: p.cardScale.to(s => `scale(${s})`) }}
                 >
-                    <div className="text-xl opacity-75">
+
+                    {/* <div className={VERSION === 'hitch' ? 'text-xl opacity-75 text-black' : ' text-xl opacity-75'}>
+                      {`第${i + 1}课`}
+                    </div>
+                    <div className={VERSION === 'hitch' ? 'text-2xl text-black font-bold' : ' text-2xl font-bold'}>
+                      {l.original ? removeExtension(l.title) : l.title}
+                    </div> */}
+
+                    <div className={VERSION === 'hitch' ? "text-xl opacity-75 text-black" : "text-xl opacity-75"}>
                         {dateFormatted}
                     </div>
-                    <div className="text-2xl font-bold">
+                    <div className={VERSION === 'hitch' ? "text-2xl font-bold text-black" : "text-2xl font-bold"}>
                         {title}
                     </div>
+
+
                     <div
                      className="absfull cursor-pointer"
                      onClick={() => edit ? setChecked(!checked) : onOpen()}

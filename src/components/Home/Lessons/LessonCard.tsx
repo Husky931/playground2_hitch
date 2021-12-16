@@ -24,12 +24,37 @@ const LessonCard: React.FC<{ l: ILesson, i: number }> = ({ l, i }) => {
          ref={setClickEl}
         >
             <div className="absfull opacity-25" />
-            <div className="text-xl opacity-75">
-                {`第${i + 1}课`}
-            </div>
-            <div className="text-2xl font-bold">
-                {l.original ? removeExtension(l.title) : l.title}
-            </div>
+            {/* {
+                //@ts-ignore
+                VERSION === "hitch" ? (
+                  <>
+                    <div className="text-xl opacity-75 text-black">
+                      {`第${i + 1}课`}
+                    </div>
+                    <div className="text-2xl text-black font-bold ">
+                      {l.original ? removeExtension(l.title) : l.title}
+                    </div>
+                  </>
+                )
+                :
+                  <>
+                    <div className="text-xl opacity-75">
+                      {`第${i + 1}课`}
+                    </div>
+                    <div className="text-2xl font-bold">
+                        {l.original ? removeExtension(l.title) : l.title}
+                    </div>
+                  </>
+               } */}
+
+                    <div className={VERSION === 'hitch' ? 'text-xl opacity-75 text-black' : ' text-xl opacity-75'}>
+                      {`第${i + 1}课`}
+                    </div>
+                    {/* <div className="text-2xl text-black font-bold "> */}
+                    <div className={VERSION === 'hitch' ? 'text-2xl text-black font-bold' : ' text-2xl font-bold'}>
+                      {l.original ? removeExtension(l.title) : l.title}
+                    </div>
+
             {/* <div className="absolute bottom-0 pb-8 opacity-75">
                 {`已完成：${1} / ${10}`}
             </div> */}
